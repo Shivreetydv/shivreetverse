@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Shivreet Yadav | Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Remix Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+
+  <!-- NOISE -->
+  <div class="noise"></div>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">SY</div>
+
+      <div class="loader-bar">
+        <div class="loader-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header id="navbar">
+    <div class="nav-container">
+
+      <a href="#" class="nav-logo">
+        <div class="logo-mark">SY</div>
+        <div class="logo-text">Shivreet Yadav</div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#education" class="mobile-link">Education</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero">
+
+    <div class="hero-bg">
+
+      <canvas id="grid-canvas"></canvas>
+
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+
+    </div>
+
+    <div class="hero-content">
+
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Available For Opportunities
+      </div>
+
+      <h1 class="hero-name reveal">
+        <span class="line-wrap">
+          <span class="line">Shivreet</span>
+        </span>
+
+        <span class="line-wrap">
+          <span class="line">Yadav</span>
+        </span>
+      </h1>
+
+      <div class="hero-role reveal">
+        <span class="role-prefix">I’m a</span>
+
+        <span class="typed-text" id="typedText"></span>
+
+        <span class="cursor-blink">|</span>
+      </div>
+
+      <p class="hero-tagline reveal">
+        Passionate learner focused on technology, development,
+        creativity, and building modern digital experiences with
+        premium design aesthetics.
+      </p>
+
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn-primary">
+          View Projects
+          <i class="ri-arrow-right-line"></i>
+        </a>
+
+        <a href="#contact" class="btn-ghost">
+          Contact Me
+        </a>
+      </div>
+
+      <div class="hero-meta reveal">
+
+        <div class="meta-item">
+          <span class="meta-num">10+</span>
+          <span class="meta-label">Projects</span>
+        </div>
+
+        <div class="meta-divider"></div>
+
+        <div class="meta-item">
+          <span class="meta-num">2+</span>
+          <span class="meta-label">Years Learning</span>
+        </div>
+
+        <div class="meta-divider"></div>
+
+        <div class="meta-item">
+          <span class="meta-num">100%</span>
+          <span class="meta-label">Passion</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+
+      <div class="scroll-line"></div>
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+
+    <div class="container">
+
+      <div class="section-label reveal">About Me</div>
+
+      <h2 class="section-heading reveal">
+        Building clean, modern
+        <br class="desktop-br">
+        digital experiences.
+      </h2>
+
+      <p class="section-sub reveal">
+        Focused on learning, improving skills, and creating
+        premium user experiences with modern web technologies.
+      </p>
+
+      <div class="about-grid">
+
+        <div class="about-left reveal">
+
+          <p class="about-body">
+            I’m Shivreet Yadav, a passionate learner and
+            technology enthusiast focused on web development,
+            design systems, and modern digital experiences.
+          </p>
+
+          <p class="about-body">
+            I enjoy creating sleek interfaces, exploring new
+            technologies, and continuously improving my
+            technical skills.
+          </p>
+
+          <div class="about-stats">
+
+            <div class="stat-card glass">
+              <span class="stat-val">10+</span>
+              <span class="stat-lbl">Projects</span>
+            </div>
+
+            <div class="stat-card glass">
+              <span class="stat-val">24/7</span>
+              <span class="stat-lbl">Learning</span>
+            </div>
+
+            <div class="stat-card glass">
+              <span class="stat-val">Creative</span>
+              <span class="stat-lbl">Mindset</span>
+            </div>
+
+            <div class="stat-card glass">
+              <span class="stat-val">Modern</span>
+              <span class="stat-lbl">Design</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="about-right reveal">
+
+          <div class="about-card glass">
+
+            <div class="card-header">
+              <span class="card-dot green"></span>
+              portfolio-data.json
+            </div>
+
+            <div class="code-block">
+<span class="key">name</span>: <span class="val">"Shivreet Yadav"</span>
+<span class="key">role</span>: <span class="val">"Developer"</span>
+<span class="key">skills</span>: <span class="val">["HTML","CSS","JavaScript"]</span>
+<span class="key">focus</span>: <span class="val">"Modern UI/UX"</span>
+<span class="key">status</span>: <span class="val">"Learning & Growing"</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+
+    <div class="container">
+
+      <div class="section-label reveal">Skills</div>
+
+      <h2 class="section-heading reveal">
+        Technologies & Expertise
+      </h2>
+
+      <p class="section-sub reveal">
+        Continuously improving and building expertise in modern
+        web development technologies.
+      </p>
+
+      <div class="skills-grid">
+
+        <!-- FRONTEND -->
+        <div class="skill-group glass reveal">
+
+          <div class="sg-icon">
+            <i class="ri-code-s-slash-line"></i>
+          </div>
+
+          <h3>Frontend Development</h3>
+
+          <div class="skill-bars">
+
+            <div class="skill-item">
+              <div class="skill-top">
+                <span>HTML</span>
+                <span>95%</span>
+              </div>
+
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="95%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-top">
+                <span>CSS</span>
+                <span>90%</span>
+              </div>
+
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="90%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-top">
+                <span>JavaScript</span>
+                <span>80%</span>
+              </div>
+
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="80%"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- DESIGN -->
+        <div class="skill-group glass reveal">
+
+          <div class="sg-icon">
+            <i class="ri-palette-line"></i>
+          </div>
+
+          <h3>Design & UI/UX</h3>
+
+          <div class="soft-tags">
+            <span class="tag">Glassmorphism</span>
+            <span class="tag">Responsive Design</span>
+            <span class="tag">Modern UI</span>
+            <span class="tag">Animations</span>
+            <span class="tag">Premium Layouts</span>
+            <span class="tag">Dark Themes</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+
+    <div class="container">
+
+      <div class="section-label reveal">Education</div>
+
+      <h2 class="section-heading reveal">
+        Academic Journey
+      </h2>
+
+      <p class="section-sub reveal">
+        Learning continuously while building practical and
+        creative technical skills.
+      </p>
+
+      <div class="timeline">
+
+        <!-- ITEM -->
+        <div class="timeline-item reveal">
+
+          <div class="tl-marker">
+            <div class="tl-dot completed"></div>
+            <div class="tl-line"></div>
+          </div>
+
+          <div class="tl-card glass">
+
+            <div class="tl-top">
+
+              <div>
+                <div class="tl-badge completed-badge">Completed</div>
+
+                <h3 class="tl-title">
+                  Bachelor Degree
+                </h3>
+
+                <div class="tl-place">
+                  Graduation Completed
+                </div>
+              </div>
+
+              <div class="tl-year">
+                2026
+              </div>
+
+            </div>
+
+            <p class="tl-desc">
+              Developed strong academic foundations while
+              exploring technology, digital skills, and modern
+              development tools.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- ITEM -->
+        <div class="timeline-item reveal">
+
+          <div class="tl-marker">
+            <div class="tl-dot"></div>
+          </div>
+
+          <div class="tl-card glass">
+
+            <div class="tl-top">
+
+              <div>
+                <div class="tl-badge pursuing">Learning</div>
+
+                <h3 class="tl-title">
+                  Self Learning & Development
+                </h3>
+
+                <div class="tl-place">
+                  Web Development & Design
+                </div>
+              </div>
+
+              <div class="tl-year">
+                Present
+              </div>
+
+            </div>
+
+            <p class="tl-desc">
+              Focused on frontend development, premium UI design,
+              responsive layouts, and creating modern digital
+              experiences.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+
+    <div class="container">
+
+      <div class="section-label reveal">Projects</div>
+
+      <h2 class="section-heading reveal">
+        Selected Work
+      </h2>
+
+      <p class="section-sub reveal">
+        A collection of creative and modern frontend projects.
+      </p>
+
+      <div class="projects-grid">
+
+        <!-- PROJECT -->
+        <div class="project-card glass reveal">
+
+          <div class="project-glow"></div>
+
+          <div class="project-top">
+
+            <div class="project-number">
+              01
+            </div>
+
+            <a href="#" class="proj-link">
+              <i class="ri-arrow-right-up-line"></i>
+            </a>
+
+          </div>
+
+          <h3 class="project-title">
+            Premium Portfolio Website
+          </h3>
+
+          <p class="project-desc">
+            Modern portfolio website with glassmorphism,
+            animations, responsive layout, and premium UI.
+          </p>
+
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+
+        </div>
+
+        <!-- PROJECT -->
+        <div class="project-card glass reveal">
+
+          <div class="project-glow"></div>
+
+          <div class="project-top">
+
+            <div class="project-number">
+              02
+            </div>
+
+            <a href="#" class="proj-link">
+              <i class="ri-arrow-right-up-line"></i>
+            </a>
+
+          </div>
+
+          <h3 class="project-title">
+            Landing Page Design
+          </h3>
+
+          <p class="project-desc">
+            Responsive and visually engaging landing page with
+            smooth interactions and elegant layout.
+          </p>
+
+          <div class="project-tech">
+            <span>UI Design</span>
+            <span>Responsive</span>
+            <span>Animations</span>
+          </div>
+
+        </div>
+
+        <!-- PROJECT -->
+        <div class="project-card glass reveal">
+
+          <div class="project-glow"></div>
+
+          <div class="project-top">
+
+            <div class="project-number">
+              03
+            </div>
+
+            <a href="#" class="proj-link">
+              <i class="ri-arrow-right-up-line"></i>
+            </a>
+
+          </div>
+
+          <h3 class="project-title">
+            Dark Theme Dashboard
+          </h3>
+
+          <p class="project-desc">
+            Stylish dark UI dashboard concept with modern
+            component-based interface and smooth design.
+          </p>
+
+          <div class="project-tech">
+            <span>Dashboard</span>
+            <span>Dark UI</span>
+            <span>Frontend</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume">
+
+    <div class="container">
+
+      <div class="resume-band glass reveal">
+
+        <div class="resume-left">
+
+          <div class="resume-icon">
+            <i class="ri-file-download-line"></i>
+          </div>
+
+          <div>
+            <h3>Download Resume</h3>
+
+            <p>
+              Download my latest professional resume.
+            </p>
+          </div>
+
+        </div>
+
+        <a href="#" class="btn-primary">
+          Download CV
+          <i class="ri-download-line"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+
+    <div class="container">
+
+      <div class="section-label reveal">Contact</div>
+
+      <h2 class="section-heading reveal">
+        Let’s Work Together
+      </h2>
+
+      <p class="section-sub reveal">
+        Feel free to connect for collaborations, opportunities,
+        or creative discussions.
+      </p>
+
+      <div class="contact-grid">
+
+        <!-- LEFT -->
+        <div class="contact-info">
+
+          <div class="contact-item glass reveal">
+
+            <div class="ci-icon">
+              <i class="ri-mail-line"></i>
+            </div>
+
+            <div>
+              <span class="ci-label">Email</span>
+
+              <a href="#" class="ci-val">
+                yourmail@example.com
+              </a>
+            </div>
+
+          </div>
+
+          <div class="contact-item glass reveal">
+
+            <div class="ci-icon">
+              <i class="ri-phone-line"></i>
+            </div>
+
+            <div>
+              <span class="ci-label">Phone</span>
+
+              <a href="#" class="ci-val">
+                +91 XXXXX XXXXX
+              </a>
+            </div>
+
+          </div>
+
+          <div class="contact-item glass reveal">
+
+            <div class="ci-icon">
+              <i class="ri-map-pin-line"></i>
+            </div>
+
+            <div>
+              <span class="ci-label">Location</span>
+
+              <div class="ci-val">
+                Lucknow, India
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <form class="contact-form glass reveal">
+
+          <div class="form-row">
+
+            <div class="form-group">
+              <label>Name</label>
+
+              <input type="text" placeholder="Your Name">
+            </div>
+
+            <div class="form-group">
+              <label>Email</label>
+
+              <input type="email" placeholder="Your Email">
+            </div>
+
+          </div>
+
+          <div class="form-group">
+            <label>Subject</label>
+
+            <input type="text" placeholder="Subject">
+          </div>
+
+          <div class="form-group">
+            <label>Message</label>
+
+            <textarea rows="6" placeholder="Write your message..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary full-width">
+            Send Message
+            <i class="ri-send-plane-line"></i>
+          </button>
+
+          <div class="form-success">
+            <i class="ri-checkbox-circle-line"></i>
+            Message Sent Successfully
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <div class="logo-mark">SY</div>
+
+          <div>
+            Shivreet Yadav
+          </div>
+
+        </div>
+
+        <div class="footer-tagline">
+          Crafted with passion & precision.
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <div class="footer-copy">
+          © 2026 Shivreet Yadav. All Rights Reserved.
+        </div>
+
+        <div class="footer-links">
+          <a href="https://www.instagram.com/shivreet_yadav_?igsh=MWhxZDhycnQ3cWg5ag==">Instagram</a>
+          <a href="https://www.linkedin.com/in/shivreet-yadav-b1b830274?utm_source=share_via&utm_content=profile&utm_medium=member_android">LinkedIn</a>
+          <a href="https://github.com/Shivreetydv/shivreetspace">GitHub</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+
+    // LOADER
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        document.getElementById("loader").classList.add("done");
+        document.body.classList.add("loaded");
+      }, 1600);
+    });
+
+    // NAVBAR
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", () => {
+      navbar.classList.toggle("scrolled", window.scrollY > 40);
+    });
+
+    // MOBILE MENU
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("open");
+      mobileMenu.classList.toggle("open");
+    });
+
+    // TYPING EFFECT
+    const typedText = document.getElementById("typedText");
+
+    const words = [
+      "Frontend Developer",
+      "UI Designer",
+      "Creative Learner",
+      "Modern Creator"
+    ];
+
+    let wordIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
+
+    function typeEffect() {
+
+      const currentWord = words[wordIndex];
+
+      if (!deleting) {
+        typedText.textContent =
+          currentWord.substring(0, charIndex++);
+
+        if (charIndex > currentWord.length) {
+          deleting = true;
+
+          setTimeout(typeEffect, 1200);
+          return;
+        }
+      } else {
+
+        typedText.textContent =
+          currentWord.substring(0, charIndex--);
+
+        if (charIndex < 0) {
+          deleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+        }
+      }
+
+      setTimeout(typeEffect, deleting ? 50 : 100);
+    }
+
+    typeEffect();
+
+    // REVEAL ANIMATION
+    const reveals = document.querySelectorAll(".reveal");
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    reveals.forEach(el => observer.observe(el));
+
+    // SKILL BARS
+    const skillBars = document.querySelectorAll(".skill-fill");
+
+    const skillObserver = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.width =
+              entry.target.dataset.width;
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    skillBars.forEach(bar => skillObserver.observe(bar));
+
+    // CUSTOM CURSOR
+    const cursor = document.getElementById("cursor");
+    const follower = document.getElementById("cursor-follower");
+
+    document.addEventListener("mousemove", e => {
+
+      cursor.style.left = e.clientX + "px";
+      cursor.style.top = e.clientY + "px";
+
+      follower.style.left = e.clientX + "px";
+      follower.style.top = e.clientY + "px";
+    });
+
+    const hoverElements = document.querySelectorAll(
+      "a, button, .project-card"
+    );
+
+    hoverElements.forEach(el => {
+
+      el.addEventListener("mouseenter", () => {
+        document.body.classList.add("cursor-hover");
+      });
+
+      el.addEventListener("mouseleave", () => {
+        document.body.classList.remove("cursor-hover");
+      });
+
+    });
+
+    // CONTACT FORM
+    const form = document.querySelector(".contact-form");
+    const success = document.querySelector(".form-success");
+
+    form.addEventListener("submit", e => {
+
+      e.preventDefault();
+
+      success.classList.add("show");
+
+      setTimeout(() => {
+        success.classList.remove("show");
+      }, 3000);
+
+      form.reset();
+
+    });
+
+  </script>
+
+</body>
+</html>
